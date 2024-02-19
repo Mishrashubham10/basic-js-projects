@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/app.js" defer></script>
+    <title>Number Guessor</title>
+</head>
+<body>
+    <nav>
+        <div class="navContainer">
+        <button class="navBtn">
+            <a href="/">Home</a>
+        </button>
+        <button class="navBtn">
+            <a href="https://www.youtube.com">Youtube</a>
+        </button>
+    </div>
+    </nav>
+    <div class="container" id="wrapper">
+            <h2>Number guessing game</h2>
+        <p>Try and guess a random number between 1 to 100.</p>
+        <p>You have 10 attempts to guess the right number.</p>
+        <br />
+        <form class="form">
+            <label for="guessField">Guess a Number</label>
+            <input type="text" id="guessField" class="guessField">
+            <button type="submit" id="subt">Submit guess</button>
+        </form>
+
+        <div class="resultParas">
+            <p>Previous Guess: <span class="guesses"></span></p>
+            <p>Guesses Remaining: <span class="lastResult">10</span></p>
+            <p class="lowOrHi"></p>
+        </div>
+    </div>
+</body>
+</html>
